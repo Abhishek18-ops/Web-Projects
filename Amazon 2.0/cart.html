@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon 2.0</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous" >
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jdenticon@3.1.0/dist/jdenticon.min.js" async
+        integrity="sha384-VngWWnG9GS4jDgsGEUNaoRQtfBGiIKZTiXwm9KpgAeaRn6Y/1tAFiyXqSzqC8Ga/"
+        crossorigin="anonymous">
+</script>
+</head>
+<body>
+    <div class="bg-white w-full">
+        <div class="header h-16 bg-gray-900 flex
+        items-center">
+            <div class="logo w-1/5 h-12 ml-10 pt-3">
+                <img class="w-18 h-11
+                object-contain" src="https://www.pinclipart.com/picdir/big/57-576184_view-our-amazon-storefront-amazon-logo-white-png.png">
+            </div>
+            <input class ="h-9 w-30 bg-gray-800 border
+            border-gray-500 border-opacity-75
+            rounded-l-xl px-3 text-white ml-6 
+            placeholder-white" id="search" type="text"
+            placeholder="search...">
+        </input>
+        <div class="h-9 w-30 bg-gray-800 border border-gray-500 border-opacity-75
+        pt-3 text-white items-center flex justify-center">
+        catagories
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-3" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <div class="search-icon bg-yellow-500 h-9 w-10
+        rounded-r-xl items-center flex justify-center
+        text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+        </div>
+        <!--Right icons-->
+        <div class="icons flex text-white items-center ml-auto
+        mr-8 w-48 h-16 justify-around">
+            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+              <div class="cart-icon h-10 w-10 relative bg-yellow-500 flex items-center justify-center rounded-xl text-sm text-gray-600">
+                <div class="cart-icon-Number text-gray-800 text-sm absolute -top-1
+                -right-1 h-4 w-4 bg-white rounded-full flex justify-center items-center">
+                1
+                </div>
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                  
+                  
+              </div>
+              
+              <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+              </svg>
+              <svg  class="rounded h-12 w-12" data-jdenticon-value ="jessy"></svg>
+        </div>
+        </div>
+        <div class="border-t-2 border-gray-700 main h-screen flex">
+            <div class="main-sidebar w-1/5  bg-gray-900 p-6">
+                <div class="sidebar-categories">
+                    <div class="sidebar-main-category
+                    text-yellow-500 cursior-pointer flex font-bold
+                    mb-3 p-2 bg-gray-700 rounded-lg">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                          </svg>
+                    </span>
+                    
+                      <span>Catagories</span>
+                        </div>
+                        <div class="sidebar-main-category 
+                        text-white cursior-pointer flex font-bold p-2 mb-2
+                        hover:bg-gray-800 rounded-xl">
+                        <span class="w-8"></span>
+                            <span>Echo and Elexa</span>
+                        </div>
+                        <div class="sidebar-main-category 
+                        text-white cursior-pointer flex font-bold p-2 mb-2
+                        hover:bg-gray-800 rounded-xl">
+                        <span class="w-8"></span>
+                            <span>Kindel</span>
+                        </div>
+                        <div class="sidebar-main-category 
+                        text-white cursior-pointer flex font-bold p-2 mb-2
+                        hover:bg-gray-800 rounded-xl">
+                        <span class="w-8"></span>
+                            <span>Books</span>
+                        </div>
+                        <div class="sidebar-main-category 
+                        text-white cursior-pointer flex font-bold p-2 mb-2
+                        hover:bg-gray-800 rounded-xl">
+                        <span class="w-8"></span>
+                            <span>Electronics</span>
+                        </div>
+                        <div class="sidebar-main-category 
+                        text-white cursior-pointer flex font-bold p-2 mb-2
+                        hover:bg-gray-800 rounded-xl">
+                        <span class="w-8"></span>
+                            <span>Home and Garden</span>
+                        </div>
+                        <div class="sidebar-main-category 
+                        text-white cursior-pointer flex font-bold p-2 mb-2
+                        hover:bg-gray-800 rounded-xl">
+                        <span class="w-8"></span>
+                            <span>Fashion</span>
+                        </div>
+                        <div class="sidebar-main-category 
+                        text-white cursior-pointer flex font-bold p-2 mb-2
+                        hover:bg-gray-700 rounded-xl mb-4">
+                        <span class="w-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5C2.056 5.649 2 6.319 2 7c0 5.225 3.34 9.67 8 11.317C14.66 16.67 18 12.225 18 7c0-.682-.057-1.35-.166-2.001A11.954 11.954 0 0110 1.944zM11 14a1 1 0 11-2 0 1 1 0 012 0zm0-7a1 1 0 10-2 0v3a1 1 0 102 0V7z" clip-rule="evenodd" />
+                              </svg>
+                        </span>
+                            <span>Sell on Amazon</span>
+                        </div>
+                        <div class="sidebar-main-category 
+                        text-white cursior-pointer flex font-bold p-2 mb-2
+                        hover:bg-gray-700 rounded-xl">
+                        <span class="w-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                              </svg>
+                        </span>
+                            <span>Help</span>
+                        </div>
+                    </div>
+                </div>
+            <div class="main-section flex-1 p-6 bg-gray-100">
+                <h1 class="text-gray-400 text-3xl text-white font-bold mb-6">Shopping Cart</h1>
+                <div class="table-title flex  font-bold 
+                text-gray-400 ">
+                    <h2 class="flex-grow w-48">Products</h2>
+                    <h2 class="w-48">Count</h2>
+                    <h2 class="w-48">Total Cost</h2>
+                    <span class="w-10"></span>
+                </div>
+                
+                <div class="cart-items mt-5">
+
+                    <div class="cart-item flex items-center
+                    pb-4 border-b border-gray-300">
+                        <div class="cart-item-image w-40 h-24 bg-white p-4 
+                         rounded-lg">
+                         <img class="w-full h-full object-contain" src="https://m.media-amazon.com/images/I/71an9eiBxpL._AC_SL1500_.jpg">
+                        </div>
+                        <div class="cart-item-details flex-grow w-48">
+                        <div class="cart-item-title font-bold text-sm text-gray-600 ">
+                            MacBook Pro
+                        </div>
+                        <div class="cart-item-brand text-gray-400 text-sm">
+                            Apple
+                        </div>
+                        </div>
+                        <div class="cart-item-counter w-48 items-center flex">
+                            <div class="chevron-left cursior-pointer text-gray-400
+                            bg-gray-200 rounded-lg w-6 h-6 cursor-pointer
+                            flex justify-center items-center hover:bg-gray-300 mr-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                  </svg>
+                            </div>
+                            <h4 class="text-gray-400">x1</h4>
+                            <div class="chevorn-right cursior-pointer text-gray-400
+                            bg-gray-200 rounded-lg w-6 h-6 cursor-pointer
+                            flex justify-center items-center hover:bg-gray-300 ml-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                  </svg>
+                            </div>
+                        </div>
+                        <div class="cart-item-total-cost w-48 font-bold
+                        text-gray-400">
+                        $2999.00
+                        </div>
+                        <div class="cart-item-total-count">
+                            
+                        </div>
+                        <div class="cart-item-delete w-10 font-bold text-gray-400 cursor-pointer
+                        cursior-pointer hover:text-gray-500">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="cart-item flex items-center
+                    pb-4 border-b border-gray-300">
+                        <div class="cart-item-image w-40 h-24 bg-white p-4 
+                         rounded-lg">
+                         <img class="w-full h-full object-contain" src="https://m.media-amazon.com/images/I/41V5KQ500IL.jpg">
+
+                        </div>
+                        <div class="cart-item-details flex-grow w-48">
+                        <div class="cart-item-title font-bold text-sm text-gray-600 ">
+                            Nintendo Switch(2021)
+                        </div>
+                        <div class="cart-item-brand text-gray-400 text-sm">
+                            Nintendo 
+                        </div>
+                        </div>
+                        <div class="cart-item-counter w-48 items-center flex">
+                            <div class="chevron-left cursior-pointer text-gray-400
+                            bg-gray-200 rounded-lg w-6 h-6 cursor-pointer
+                            flex justify-center items-center hover:bg-gray-300 mr-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                  </svg>
+                            </div>
+                            <h4 class="text-gray-400">x1</h4>
+                            <div class="chevorn-right cursior-pointer text-gray-400
+                            bg-gray-200 rounded-lg w-6 h-6 cursor-pointer
+                            flex justify-center items-center hover:bg-gray-300 ml-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                  </svg>
+                            </div>
+                        </div>
+                        <div class="cart-item-total-cost w-48 font-bold
+                        text-gray-400">
+                        $299.00
+                        </div>
+                        <div class="cart-item-total-count">
+                            
+                        </div>
+                        <div class="cart-item-delete w-10 font-bold text-gray-400 cursor-pointer
+                        cursior-pointer hover:text-gray-500">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="Complete-order flex justify-end mt-10">
+                    <div class="total-cost mr-7">
+                        <h2 class="text-gray-400 ">Total Cost</h2>
+                        <div class="total-cost-number font-bold text-3xl text-gray-600 ">
+                            $3298.00
+                        </div>
+                    </div>
+                    <div class="complete-order-button w-56 flex font-bold
+                    items-center justify-center bg-yellow-500 text-white cursor-pointer rounded-lg
+                    hover:bg-yellow-600">
+                        Complete Order
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
